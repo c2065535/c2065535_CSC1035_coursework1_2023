@@ -1,4 +1,4 @@
 public class AuctionHouse {
     private String auctionHouseName;
-    private String itemList[];
+    private String itemSold[];
 }

@@ -9,11 +9,12 @@ public class Item{
 
 
     public String toString(){
-        return String.format("Lot Number:%s\n" +
-                "Buyer Name:%s\n" +
-                "Item Price:%s\n" +
-                "Year Item Sold:%s\n" +
-                "Item Type:%s", item_lot_number, buyerName, itemPrice, yearItemSold, itemType);
+        return String.format("""
+                Lot Number:%s
+                Buyer Name:%s
+                Item Price:%s
+                Year Item Sold:%s
+                Item Type:%s""", item_lot_number, buyerName, itemPrice, yearItemSold, itemType);
     }
 
     public Item(int item_lot_number, String buyerName, int itemPrice, int yearItemSold, String itemType){
