@@ -5,6 +5,16 @@ public class Item{
     private int itemPrice;
     private String yearItemSold;
     private String itemType;
+    // 3 types are - Furniture, Painting, Sculpture
+
+
+    public String toString(){
+        return String.format("Lot Number:%s\n" +
+                "Buyer Name:%s\n" +
+                "Item Price:%s\n" +
+                "Year Item Sold:%s\n" +
+                "Item Type:%s", item_lot_number, buyerName, itemPrice, yearItemSold, itemType);
+    }
 
     public Item(int item_lot_number, String buyerName, int itemPrice, String yearItemSold, String itemType){
         this.item_lot_number = item_lot_number;
