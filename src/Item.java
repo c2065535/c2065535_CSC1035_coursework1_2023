@@ -3,7 +3,7 @@ public class Item{
     private int item_lot_number;
     private String buyerName;
     private int itemPrice;
-    private String yearItemSold;
+    private int yearItemSold;
     private String itemType;
     // 3 types are - Furniture, Painting, Sculpture
 
@@ -16,7 +16,7 @@ public class Item{
                 "Item Type:%s", item_lot_number, buyerName, itemPrice, yearItemSold, itemType);
     }
 
-    public Item(int item_lot_number, String buyerName, int itemPrice, String yearItemSold, String itemType){
+    public Item(int item_lot_number, String buyerName, int itemPrice, int yearItemSold, String itemType){
         this.item_lot_number = item_lot_number;
         this.buyerName = buyerName;
         this.itemPrice = itemPrice;
@@ -48,11 +48,11 @@ public class Item{
         this.itemPrice = itemPrice;
     }
 
-    public String getYearItemSold() {
+    public int getYearItemSold() {
         return yearItemSold;
     }
 
-    public void setYearItemSold(String yearItemSold) {
+    public void setYearItemSold(int yearItemSold) {
         this.yearItemSold = yearItemSold;
     }
 
