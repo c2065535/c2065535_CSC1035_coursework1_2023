@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class AuctionHouse {
     private String auctionHouseName;
     private String itemSold[];
@@ -23,6 +25,6 @@ public class AuctionHouse {
     }
 
     public String toString() {
-        return String.format("%s%s", getAuctionHouseName(), getitemSold());
+        return String.format("Auction House: %s\nItems Sold: %s", getAuctionHouseName(), Arrays.toString(getitemSold()));
     }
 }

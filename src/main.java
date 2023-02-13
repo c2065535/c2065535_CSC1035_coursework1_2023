@@ -22,5 +22,7 @@ public class main {
     public static void main(String[] args) {
         Item i = new Item(10, "Charlie", 100, 2013, "Sculpture");
         System.out.println(i);
+        AuctionHouse a = new AuctionHouse("Randy", new String[]{"cat", "rat", "pig", "dog"});
+        System.out.println(a);
     }
 }
