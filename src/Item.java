@@ -1,13 +1,33 @@
-
+/**
+ * This is a class for storing data about an Item. It has various relevant fields.
+ */
 public class Item{
+
     private int item_lot_number;
     private String buyerName;
     private int itemPrice;
     private int yearItemSold;
     private String itemType;
-    // 3 types are - Furniture, Painting, Sculpture
 
+    /**
+     * This is a constructor for the item class. It sets up all of the fields.
+     * @param item_lot_number is the lot number for the item.
+     * @param buyerName is the name of the buyer.
+     * @param itemPrice is the price of the item.
+     * @param yearItemSold is the year the item was sold.
+     * @param itemType is the type of item, 3 types are - Furniture, Painting, Sculpture.
+     */
+    public Item(int item_lot_number, String buyerName, int itemPrice, int yearItemSold, String itemType){
+        this.item_lot_number = item_lot_number;
+        this.buyerName = buyerName;
+        this.itemPrice = itemPrice;
+        this.yearItemSold = yearItemSold;
+        this.itemType = itemType;
+    }
 
+    /**
+     * This returns human readable version of the items and its properties.
+     */
     public String toString(){
         return String.format("""
                 Lot Number:%s
@@ -17,13 +37,6 @@ public class Item{
                 Item Type:%s""", item_lot_number, buyerName, itemPrice, yearItemSold, itemType);
     }
 
-    public Item(int item_lot_number, String buyerName, int itemPrice, int yearItemSold, String itemType){
-        this.item_lot_number = item_lot_number;
-        this.buyerName = buyerName;
-        this.itemPrice = itemPrice;
-        this.yearItemSold = yearItemSold;
-        this.itemType = itemType;
-    }
 
     public int getItem_lot_number() {
         return item_lot_number;
